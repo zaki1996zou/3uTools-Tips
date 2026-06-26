@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate iOS app icon PNGs from assets/app_icon.png."""
+"""Generate iOS app icon PNGs from assets/app_icon.png (opaque, no alpha)."""
 
 from pathlib import Path
 
@@ -8,6 +8,9 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "assets/app_icon.png"
 OUT = ROOT / "ios/Runner/Assets.xcassets/AppIcon.appiconset"
+
+# Opaque background for icons with transparency (App Store requires no alpha on 1024).
+BACKGROUND = (255, 255, 255, 255)
 
 SIZES = {
     "Icon-App-20x20@1x.png": 20,
@@ -28,14 +31,24 @@ SIZES = {
 }
 
 
+def _opaque_icon(source: Image.Image, size: int) -> Image.Image:
+    resized = source.resize((size, size), Image.Resampling.LANCZOS)
+    if resized.mode != "RGBA":
+        resized = resized.convert("RGBA")
+    background = Image.new("RGBA", (size, size), BACKGROUND)
+    background.alpha_composite(resized)
+    return background.convert("RGB")
+
+
 def main():
     if not SOURCE.exists():
         raise SystemExit(f"Missing source icon: {SOURCE}")
-    img = Image.open(SOURCE).convert("RGBA")
+    source = Image.open(SOURCE).convert("RGBA")
     OUT.mkdir(parents=True, exist_ok=True)
     for name, px in SIZES.items():
-        img.resize((px, px), Image.Resampling.LANCZOS).save(OUT / name, "PNG")
-        print(f"Wrote {name} ({px}px)")
+        icon = _opaque_icon(source, px)
+        icon.save(OUT / name, "PNG")
+        print(f"Wrote {name} ({px}px, RGB)")
 
 
 if __name__ == "__main__":
