@@ -1,13 +1,12 @@
 /// App-wide configuration for store submission and legal compliance.
 abstract final class AppConfig {
   static const appName = '3uTools Tips Guide';
-  static const bundleId = 'com.3utools.tips';
+  static const bundleId = 'com.3utools.tipsguide';
 
   static const official3uToolsUrl = 'https://www.3u.com/';
   static const official3uToolsIosUrl =
       'https://apps.apple.com/app/3utools/id6763758785';
-  static const appleIosVersionsUrl =
-      'https://support.apple.com/en-us/iphone';
+  static const appleIosVersionsUrl = 'https://support.apple.com/en-us/iphone';
   static const ipswMeUrl = 'https://ipsw.me/';
   static const appleSupportUrl = 'https://support.apple.com/';
 
