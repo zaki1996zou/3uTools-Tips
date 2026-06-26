@@ -52,7 +52,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
           const _Section(
             title: 'Contact',
             body:
-                'For privacy questions, contact us at ${AppConfig.supportEmail}.',
+                'For privacy questions, contact us at ${AppConfig.supportEmail} or visit '
+                '${AppConfig.privacyPolicyUrl}.',
           ),
         ],
       ),

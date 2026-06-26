@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../constants/app_config.dart';
 import '../state/app_state.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_styles.dart';
@@ -79,7 +80,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   child: const AppLogo(size: 100),
                 ),
                 const SizedBox(height: 28),
-                const Text('3uTools Tips', style: AppStyles.heroTitle),
+                Text(AppConfig.appName, style: AppStyles.heroTitle),
                 const SizedBox(height: 8),
                 Text(
                   'Loading your guide hub…',

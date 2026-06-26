@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../constants/app_config.dart';
 import '../data/mock_data.dart';
 import '../models/tutorial.dart';
 import '../state/app_state.dart';
@@ -73,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
             slivers: [
               SliverToBoxAdapter(
                 child: BlueHero(
-                  title: '3uTools Tips',
+                  title: AppConfig.appName,
                   subtitle: 'Your iPhone guide hub',
                   leading: const AppLogoSmall(size: 40),
                   trailing: ThemeToggleButton(

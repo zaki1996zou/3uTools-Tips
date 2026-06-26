@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'constants/app_config.dart';
 import 'screens/splash_screen.dart';
 import 'services/storage_service.dart';
 import 'state/app_state.dart';
@@ -47,7 +48,7 @@ class _ThreeUToolsAppState extends State<ThreeUToolsApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '3uTools Tips',
+      title: AppConfig.appName,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),

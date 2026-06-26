@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../constants/app_config.dart';
 import '../state/app_state.dart';
 import '../theme/app_colors.dart';
 import '../widgets/dock_nav_bar.dart';
@@ -35,7 +36,7 @@ class _MainShellState extends State<MainShell> {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: const Text('Welcome', style: TextStyle(fontWeight: FontWeight.w800)),
           content: const Text(
-            '3uTools Tips is an unofficial companion for guides and reference tools. '
+            '${AppConfig.appName} is an unofficial companion for guides and reference tools. '
             'For device management, use the official 3uTools desktop app from 3u.com.',
             style: TextStyle(height: 1.45),
           ),

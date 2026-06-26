@@ -118,7 +118,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       context,
                       icon: Icons.privacy_tip_rounded,
                       title: 'Privacy policy',
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PrivacyPolicyScreen())),
+                      onTap: () => _openUrl(AppConfig.privacyPolicyUrl),
+                    ),
+                    _tile(
+                      context,
+                      icon: Icons.support_agent_rounded,
+                      title: 'Support',
+                      subtitle: AppConfig.supportEmail,
+                      onTap: () => _openUrl(AppConfig.supportUrl),
+                    ),
+                    _tile(
+                      context,
+                      icon: Icons.email_rounded,
+                      title: 'Contact support',
+                      subtitle: AppConfig.supportEmail,
+                      onTap: () => _openUrl('mailto:${AppConfig.supportEmail}'),
                     ),
                     _tile(
                       context,
