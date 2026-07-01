@@ -1,8 +1,8 @@
 name: fc_app3_3utools_tips
-description: "3uTools Tips — tutorials, guides, and iPhone utility tools."
+description: "iPhone PC Guide — tutorials and reference tools for managing iPhone from a Mac or PC."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.11.0

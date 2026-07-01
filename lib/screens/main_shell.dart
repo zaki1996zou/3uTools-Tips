@@ -37,7 +37,7 @@ class _MainShellState extends State<MainShell> {
           title: const Text('Welcome', style: TextStyle(fontWeight: FontWeight.w800)),
           content: const Text(
             '${AppConfig.appName} is an unofficial companion for guides and reference tools. '
-            'For device management, use the official 3uTools desktop app from 3u.com.',
+            'For device management, use desktop iPhone utility software on a Mac or PC with a USB cable.',
             style: TextStyle(height: 1.45),
           ),
           actions: [

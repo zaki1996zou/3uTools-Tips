@@ -20,13 +20,13 @@ class PrivacyPolicyScreen extends StatelessWidget {
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: tc.textPrimary),
           ),
           const SizedBox(height: 8),
-          Text('Last updated: June 2026', style: TextStyle(color: tc.textMuted)),
+          Text('Last updated: July 2026', style: TextStyle(color: tc.textMuted)),
           const SizedBox(height: 20),
           const _Section(
             title: 'Overview',
             body:
-                '${AppConfig.appName} is an unofficial companion app that provides tutorials, '
-                'guides, and reference tools. We respect your privacy and collect minimal data.',
+                '${AppConfig.appName} is an independent educational app that provides tutorials, '
+                'guides, and reference tools for iPhone users. We respect your privacy and collect minimal data.',
           ),
           const _Section(
             title: 'Data We Collect',
@@ -42,7 +42,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
           const _Section(
             title: 'Third-Party Links',
             body:
-                'The app may open external websites (such as 3u.com, Apple Support, or IPSW.me) '
+                'The app may open external websites (such as Apple Support or IPSW.me) '
                 'when you tap resource links. Those sites have their own privacy policies.',
           ),
           const _Section(
@@ -118,16 +118,16 @@ class AboutScreen extends StatelessWidget {
           const _Section(
             title: 'What This App Does',
             body:
-                '• Step-by-step tutorials for 3uTools features\n'
+                '• Step-by-step tutorials for iPhone management from a Mac or PC\n'
                 '• Quick reference tools (error codes, DFU guide, firmware finder)\n'
-                '• Curated links to official resources\n'
+                '• Curated links to Apple and community resources\n'
                 '• Bookmark and track your learning progress',
           ),
           const _Section(
-            title: 'Official 3uTools',
+            title: 'Desktop Software Required',
             body:
-                'For actual device management (flash, backup, restore), download the official '
-                '3uTools desktop application from 3u.com and connect your iPhone via USB.',
+                'To flash, back up, or restore an iPhone, you need desktop software on a Mac or PC '
+                'and a USB connection. This app provides guides and references only.',
           ),
         ],
       ),

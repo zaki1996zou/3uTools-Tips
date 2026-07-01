@@ -143,8 +143,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     _tile(
                       context,
                       icon: Icons.language_rounded,
-                      title: 'Official 3uTools site',
-                      onTap: () => _openUrl(AppConfig.official3uToolsUrl),
+                      title: 'Apple iPhone Support',
+                      onTap: () => _openUrl(AppConfig.appleSupportUrl),
                     ),
                   ]),
                 ),

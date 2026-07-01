@@ -32,7 +32,7 @@ class ToolsScreen extends StatelessWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      'These tools provide on-device reference guides. Connect your iPhone to a PC for full 3uTools features.',
+                      'These tools provide on-device reference guides. Connect your iPhone to a Mac or PC for full device management.',
                       style: TextStyle(fontSize: 13, color: context.tc.textSecondary, height: 1.35),
                     ),
                   ),

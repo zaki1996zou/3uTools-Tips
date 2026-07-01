@@ -33,7 +33,7 @@ abstract final class MockData {
 
   static const newsCategories = [
     'All',
-    'Official',
+    'Resources',
     'iOS Updates',
     'Firmware',
     'iPhone',
@@ -93,7 +93,7 @@ abstract final class MockData {
     ToolItem(
       id: 'tool4',
       title: 'Error Code Lookup',
-      description: 'Look up common iTunes and 3uTools error codes.',
+      description: 'Look up common iTunes and desktop utility error codes.',
       icon: Icons.error_outline_rounded,
       iconBg: AppColors.ringtoneTint,
       accent: AppColors.ringtoneIcon,
@@ -119,45 +119,45 @@ abstract final class MockData {
   static final tutorials = [
     Tutorial(
       id: 't1',
-      title: 'How to Download & Install 3uTools',
+      title: 'Install Desktop iPhone Software',
       category: 'Install',
       difficulty: TutorialDifficulty.beginner,
       durationMinutes: 3,
       rating: 4.8,
       icon: Icons.download,
-      subtitle: 'Get started with 3uTools on your Windows or Mac PC.',
+      subtitle: 'Get started with iPhone management software on Windows or Mac.',
       steps: const [
         TutorialStep(
-          title: 'Download 3uTools',
-          description: 'Visit the official 3uTools website and download the installer.',
+          title: 'Download the Software',
+          description: 'Download a trusted desktop iPhone utility from the developer’s official website.',
         ),
         TutorialStep(
-          title: 'Install the App',
+          title: 'Install on Your Computer',
           description: 'Run the installer and follow the on-screen setup wizard.',
         ),
         TutorialStep(
           title: 'Connect Your iPhone',
-          description: 'Plug in your device via USB and trust the computer.',
+          description: 'Plug in your device via USB and tap Trust on your iPhone.',
         ),
       ],
       proTips: const [
-        'Always download 3uTools from the official website to avoid malware.',
+        'Only download desktop tools from official developer websites.',
         'Disable antivirus temporarily if the installer is blocked.',
       ],
     ),
     Tutorial(
       id: 't2',
-      title: 'How to Flash iOS with 3uTools',
+      title: 'How to Flash iOS from a PC',
       category: 'Flash',
       difficulty: TutorialDifficulty.advanced,
       durationMinutes: 8,
       rating: 4.6,
       icon: Icons.bolt,
-      subtitle: 'Flash or restore iOS firmware using 3uTools.',
+      subtitle: 'Flash or restore iOS firmware using desktop software.',
       steps: const [
         TutorialStep(
-          title: 'Go to Flash Tab',
-          description: 'Connect your iPhone and open the Flash & JB section.',
+          title: 'Open Flash / Restore',
+          description: 'Connect your iPhone and open the flash or firmware section in your desktop tool.',
         ),
         TutorialStep(
           title: 'Select Firmware',
@@ -165,7 +165,7 @@ abstract final class MockData {
         ),
         TutorialStep(
           title: 'Start Flashing',
-          description: 'Click Flash and keep your device connected until complete.',
+          description: 'Start the flash and keep your device connected until complete.',
         ),
       ],
       proTips: const [
@@ -175,25 +175,25 @@ abstract final class MockData {
     ),
     Tutorial(
       id: 't3',
-      title: 'How to Backup iPhone with 3uTools',
+      title: 'How to Backup iPhone from a PC',
       category: 'Backup',
       difficulty: TutorialDifficulty.beginner,
       durationMinutes: 5,
       rating: 4.9,
       icon: Icons.cloud,
-      subtitle: 'Create a full backup of your iPhone in one click.',
+      subtitle: 'Create a full backup of your iPhone using desktop software.',
       steps: const [
         TutorialStep(
           title: 'Connect Device',
-          description: 'Plug your iPhone into the computer running 3uTools.',
+          description: 'Plug your iPhone into the computer running your desktop utility.',
         ),
         TutorialStep(
-          title: 'Open Backup Tab',
-          description: 'Navigate to the Backup/Restore section in 3uTools.',
+          title: 'Open Backup Section',
+          description: 'Navigate to the backup or restore section in your desktop tool.',
         ),
         TutorialStep(
-          title: 'Click Backup',
-          description: 'Select Full Backup and wait for the process to finish.',
+          title: 'Start Backup',
+          description: 'Select full backup and wait for the process to finish.',
         ),
       ],
       proTips: const [
@@ -209,7 +209,7 @@ abstract final class MockData {
       durationMinutes: 6,
       rating: 4.4,
       icon: Icons.history,
-      subtitle: 'Restore your iPhone from a previous 3uTools backup.',
+      subtitle: 'Restore your iPhone from a previous desktop backup.',
       steps: const [
         TutorialStep(
           title: 'Select Backup File',
@@ -295,7 +295,7 @@ abstract final class MockData {
       steps: const [
         TutorialStep(
           title: 'Enter Recovery Mode',
-          description: 'Force restart and connect to 3uTools in recovery mode.',
+          description: 'Force restart and connect to your desktop tool in recovery mode.',
         ),
         TutorialStep(
           title: 'Flash Latest iOS',
@@ -318,7 +318,7 @@ abstract final class MockData {
       durationMinutes: 5,
       rating: 4.3,
       icon: Icons.cable,
-      subtitle: 'Troubleshoot USB connection issues with iTunes and 3uTools.',
+      subtitle: 'Troubleshoot USB connection issues with iTunes and desktop tools.',
       steps: const [
         TutorialStep(
           title: 'Check Cable & Port',
@@ -342,14 +342,13 @@ abstract final class MockData {
   static final newsArticles = [
     NewsArticle(
       id: 'n1',
-      category: 'Official',
-      title: 'Download Official 3uTools for Windows & Mac',
+      category: 'Resources',
+      title: 'Apple iPhone User Guide',
       summary:
-          'Get the latest official 3uTools desktop application from the developer website. '
-          'Required for flashing, backups, and device management via USB.',
-      date: 'Updated regularly',
+          'Official Apple documentation for iPhone features, settings, updates, and troubleshooting.',
+      date: 'Apple Support',
       views: 0,
-      url: 'https://www.3u.com/',
+      url: 'https://support.apple.com/guide/iphone/welcome/ios',
     ),
     NewsArticle(
       id: 'n2',
@@ -387,13 +386,12 @@ abstract final class MockData {
     NewsArticle(
       id: 'n5',
       category: 'Tutorials',
-      title: 'Official 3uTools on the App Store',
+      title: 'Update iPhone Using a Computer',
       summary:
-          'The official 3uTools app by the developer. This guide app is a separate unofficial '
-          'companion for tutorials and reference tools.',
-      date: 'App Store',
+          'Apple explains how to update or restore iPhone using Finder on Mac or iTunes on Windows.',
+      date: 'Apple Support',
       views: 0,
-      url: 'https://apps.apple.com/app/3utools/id6763758785',
+      url: 'https://support.apple.com/en-us/HT201252',
     ),
   ];
 

@@ -178,7 +178,7 @@ class _ToolDetailScreenState extends State<ToolDetailScreen> {
       children: [
         _infoCard(
           'DFU Mode',
-          'Device Firmware Update mode allows 3uTools to restore or flash your iPhone when normal recovery fails.',
+          'Device Firmware Update mode allows desktop iPhone software to restore or flash your iPhone when normal recovery fails.',
         ),
         const SizedBox(height: 12),
         ...List.generate(ToolReferenceData.dfuSteps.length, (i) {
@@ -299,11 +299,11 @@ class _ToolDetailScreenState extends State<ToolDetailScreen> {
         const SizedBox(height: 16),
         _linkButton('Open IPSW.me Firmware Finder', AppConfig.ipswMeUrl),
         const SizedBox(height: 12),
-        _linkButton('Official 3uTools Download', AppConfig.official3uToolsUrl),
+        _linkButton('Apple iPhone Support', AppConfig.appleSupportUrl),
         const SizedBox(height: 20),
         const Text('How to use IPSW.me:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
         const SizedBox(height: 12),
-        ...['Select your iPhone model', 'Choose a signed iOS version (green)', 'Download the IPSW file', 'Use 3uTools Flash to install'].map(
+        ...['Select your iPhone model', 'Choose a signed iOS version (green)', 'Download the IPSW file', 'Use your desktop tool to install'].map(
           (step) => Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: Row(
